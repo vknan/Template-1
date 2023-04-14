@@ -1,95 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- Head Tag -->
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Estate</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="stylesheet" href="css/style_header.css">
-  <link rel="stylesheet" href="css/style_main.css">
-  <link rel="stylesheet" href="css/style_footer.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_footer.css">
+    <link rel="stylesheet" href="media.css">
+    <title> Homly Real Estate</title>
 </head>
+
 <body>
-  <header>
-    <nav>
-      <a href="index.html"><img src="css/images/photo1.png" width="50px" height=50px/></a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-      <form action="/search" method="GET">
-        <!-- <label for="search">Search:</label> -->
-        <input type="text" id="search" name="q" placeholder="search for properties">
-        <button type="submit">Search</button>
-      </form>
-      
-    </nav>
+    <!-- Header Section & Navigation -->
+    <header>
+        <nav>
+            <h4><i class="bi bi-house-door-fill"></i> Homly Real Estate</h4>
+            <div class="right_bx">
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#"><i class="bi bi-globe"></i> Language</a></li>
+                    <li><a href="#">List Your Property</a></li>
+                </ul>
+                <div class="account_bx">
+                    <i class="bi bi-app-indicator"></i>
+                    <i class="bi bi-person"></i>
+                </div>
+            </div>
+        </nav>
+
+         <!-- Content Starts from here -->
+        <div class="content">
+            <div class="cont_bx">
+                <h1>Modern <br> house</h1>
+                <p>3 bedrooms, 1 kitchen, 2 bathrooms</p>
+                <div class="weather">
+                    <h6>42 °C <span>Very Hot</span></h6>
+                </div>
+                <div class="btns_cont">
+                    <i class="bi bi-arrow-left" id="btn_left"></i>
+                    <i class="bi bi-arrow-right" id="btn_right"></i>
+                </div>
+                <div class="images_bx">
+                    <div class="card">
+                        <img src="img/Photo-1.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Photo-2.jpg" alt="">
+                    </div>
+                    <div class="card">
+                        <img src="img/Photo-3.jpg" alt="">
+                        <h6 id="h6">+6</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="choose_bx">
+                <div class="stay_bx">
+                    <button><i class="bi bi-house-door-fill"></i></button>
+                    <button><i class="bi bi-star-fill"></i></button>
+                    <button><i class="bi bi-tv-fill"></i></button>
+                </div>
+                <div class="select">
+                    <div class="card">
+                        <h5>City</h5>
+                        <input type="text" value="New Delhi">
+                        <input type="text" value="India">
+                    </div>
+                    <div class="card">
+                        <h5>People</h5>
+                        <input type="text" value="4 People" id="people">
+                        <button id="people_less">Less</button>
+                        <button id="people_more">More</button>
+                    </div>
+                    <div class="card">
+                        <div class="left_box">
+                            <h5>CHECK IN</h5>
+                            <div class="date">
+                                <h3 id="checkin_data">Sat, 05 Jan</h3>
+                                <input type="date" id="checkin" value="2022-09-11">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button>Less</button>
+                            <button>More</button>
+                        </div>
+                        <div class="right_box">
+                            <h5>CHECK OUT</h5>
+                            <div class="date">
+                                <h3 id="checkout_data">Sun, 06 Jan</h3>
+                                <input type="date" id="checkout">
+                                <i class="bi bi-calendar2-week-fill"></i>
+                            </div>
+                            <button id="checkout_less">Less</button>
+                            <button id="checkout_more">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- If you want map then uncomment this div -->
+    <!-- <div class="map">
+        <div class="address_bx">
+            <div class="location_bx">
+                <h6>Location</h6>
+                <h4>Sharjah House</h4>
+            </div>
+            <i class="bi bi-fullscreen-exit"></i>
+        </div>
+        <iframe src="https://my.atlistmaps.com/map/34e88f21-f4b4-4f11-8114-c2262f8c9fec?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe>
+    </div> -->
+
+
+
     
-  </header>
-  <main>
+    <div class="home">
+        <div class="title_button">
+            <h2>Explore more houses</h2>
+            <button>See All <i class="bi bi-arrow-right"></i></button>
+        </div>
 
-    <section class="welcome-section">
-      <h1 class="landing-page-welcome">Welcome to my Website</h1>
-      <p class="landing-page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <button>Learn More</button>
+        <div class="home_bx">
+            <div class="card">
+                <img src="img/Photo-6.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Edmonton</h4>
+                        <p>Canada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Photo-4.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>New York</h4>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Photo-1.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Ontario</h4>
+                        <p>Canada</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Photo-2.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>BOSTON</h4>
+                        <p>United States</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/Photo-1.jpg" alt="">
+                <div class="content">
+                    <i class="bi bi-balloon-heart"></i>
+                    <div class="cont">
+                        <h4>Monterry</h4>
+                        <p>Mexico</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Services Section -->
+    <section>
+        <h2>Our Service</h2>
+        <div class="box">
+            <div class="img_bx">
+                <img src="img/Photo-5.jpg" alt="">
+            </div>
+            <div class="cont_box">
+                <h6><span>OUR SERVICE</span></h6>
+                <h1>Comfort is our <br> Top Priority for you</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo minus ab porro id expedita facilis repudiandae dolorum maxime reprehenderit sit?</p>
+                <ul>
+                    <li>Premium Templates</li>
+                    <li>Managed Viewing</li>
+                    <li>Free To download</li>
+                    <li>Local Area share</li>
+                </ul>
+            </div>
+        </div>
     </section>
-    <section class="properties">
-      <h2 class="properties-title">Featured Properties</h2>
-      <div class="property-card">
-        <img src="css/images/photo-2.jpeg" alt="Property 1">
-        <h3>Beautiful 2-bedroom apartment in the heart of the city</h3>
-        <p class="price">$2,500/month</p>
-        <a href="#" class="cta">View Details</a>
-      </div>
-      <div class="property-card">
-        <img src="css/images/photo-3.jpeg" alt="Property 2">
-        <h3>Spacious 3-bedroom house in a quiet neighborhood</h3>
-        <p class="price">$500,000</p>
-        <a href="#" class="cta">View Details</a>
-      </div>
-      <div class="property-card">
-        <img src="css/images/photo-4.jpeg" alt="Property 3">
-        <h3>Stunning penthouse with panoramic views of the city</h3>
-        <p class="price">$1,000,000</p>
-        <a href="#" class="cta">View Details</a>
-      </div>
-    </section>
-    <section class="testimonials">
-      <h2>Testimonials</h2>
-      <div class="testimonial-card">
-        <p>"I had a great experience working with this company. They helped me find the perfect home for my family!"</p>
-        <img src="css/images/person-1.jpeg" alt="Person 1">
-        <h3>Jane Doe</h3>
-      </div>
-      <div class="testimonial-card">
-        <p>"The team at this company is top-notch. They made the selling process so easy for me!"</p>
-        <img src="css/images/person2.jpeg" alt="Person 2">
-        <h3>John Smith</h3>
-      </div>
-    </section>
-  </main>
 
 
-  <footer class="footer-section">
-  <nav>
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About Us</a></li>
-    </ul>
-  </nav>
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-  </div>
-  <p>&copy; 2023 Your Company. All rights reserved.</p>
-</footer>
+    <!-- footer section  -->
 
+    <footer class="footer-section">
+        <h4><i class="bi bi-house-door-fill"></i> Homly Real Estate</h4>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </nav>
+        <div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+        <p>&copy; 2023 Your Company. All rights reserved.</p>
+      </div>
+      </footer>
+    
+    <script src="app.js"></script>
 </body>
+
 </html>
